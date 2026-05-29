@@ -68,15 +68,13 @@ const BASE_URL = "http://localhost:8080/api/employees";
 ### Dharshini S
 **Full Stack Developer**
 
-💡 Skills: HTML,CSS,JavaScript,React.js, Java 
+💡 Skills: HTML,CSS,JavaScript,React.js,Java 
 🎯 Focus: Frontend Development | Backend Development
 
+[
 
-![LinkedIn][(https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)(www.linkedin.com/in/dharshini0705)]
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
+](www.linkedin.com/in/dharshini0705)
+[
 If you found this project helpful, please give it a star!
