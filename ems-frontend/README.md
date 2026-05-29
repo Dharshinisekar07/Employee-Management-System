@@ -1,7 +1,7 @@
-#🏢 Employee Management System (EMS)
+## Employee Management System (EMS)
 A full-stack Employee Management System built with React + Vite on the frontend, designed to manage employee records with a clean, responsive UI.
 
-##🚀 Tech Stack
+## Tech Stack
 Frontend
 React 18 — Component-based UI
 Vite — Lightning-fast build tool & dev server
