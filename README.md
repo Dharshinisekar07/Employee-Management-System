@@ -72,9 +72,8 @@ const BASE_URL = "http://localhost:8080/api/employees";
 🎯 Focus: Frontend Development | Backend Development
 
 
-![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)(www.linkedin.com/in/dharshini0705)
+![LinkedIn][(https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)(www.linkedin.com/in/dharshini0705)]
 
-![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)(https://github.com/Dharshinisekar07)
 
 ## 📄 License
 
