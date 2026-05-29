@@ -39,20 +39,17 @@ A full-stack **Employee Management System** built with **React + Vite** on the f
 ```bash
 git clone https://github.com/Dharshinisekar07/Employee-Management-System.git
 cd Employee-Management-System/ems-frontend
-```
 
 ### 2. Install Dependencies
 ```bash
 npm install
-```
 
 ### 3. Start the Development Server
 ```bash
 npm run dev
-```
 
 ### 4. Open in Browser
-```
+
 http://localhost:5173
 
 ##  Available Scripts
@@ -64,17 +61,11 @@ http://localhost:5173
 | `npm run preview` | Preview production build |
 | `npm run lint` | Run ESLint checks |
 
----
 
 ##  Backend Setup
 
-Make sure your Java backend is running. Update the base URL in `src/Services/EmployeeService.js`:
-
-```js
+Make sure your Java backend is running. Update the base URL in `src/Services/EmployeeService.js`:js
 const BASE_URL = "http://localhost:8080/api/employees";
-```
-
----
 
 ## 👩‍💻 Author
 
@@ -84,23 +75,13 @@ const BASE_URL = "http://localhost:8080/api/employees";
 💡 Skills: `HTML` `CSS` `JavaScript` `React.js` `Java`  
 🎯 Focus: Frontend Development | Backend Development
 
-[
 
-![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)(www.linkedin.com/in/dharshini0705)
 
-](https://www.linkedin.com/in/dharshini0705)
-[
-
-![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)
-
-](https://github.com/Dharshinisekar07)
-
----
+![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)(https://github.com/Dharshinisekar07)
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
 
 > ⭐ If you found this project helpful, please give it a star!
