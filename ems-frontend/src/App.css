@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:wght@600;700&display=swap');
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: aquamarine;
+}
+
+
+
+/* ─── CSS Variables ─────────────────────────────────── */
+:root {
+  --white: #ffffff;
+  --off-white: #f7f8fc;
+  --surface: #ffffff;
+  --border: #e8eaf0;
+  --border-soft: #f0f2f8;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --accent-hover: #1d4ed8;
+  --danger: #dc2626;
+  --danger-light: #fef2f2;
+  --success: #059669;
+  --success-light: #ecfdf5;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ─── Header / Navbar ───────────────────────────────── */
+.ems-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.ems-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.ems-header-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+.ems-header-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.ems-header-title span {
+  color: var(--accent);
+}
+
+.ems-header-badge {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+/* ─── Main Content ──────────────────────────────────── */
+.ems-main {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ─── Page Header ───────────────────────────────────── */
+.ems-page-header {
+  margin-bottom: 1.75rem;
+}
+
+.ems-page-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+}
+
+.ems-page-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* ─── Toolbar (Add + Search row) ───────────────────── */
+.ems-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* ─── Search Input ──────────────────────────────────── */
+.ems-search-wrap {
+  position: relative;
+  flex: 1;
+  max-width: 340px;
+}
+
+.ems-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.ems-search {
+  width: 100%;
+  padding: 9px 12px 9px 36px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.ems-search:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.10);
+}
+
+.ems-search::placeholder {
+  color: var(--text-muted);
+}
+
+/* ─── Buttons ───────────────────────────────────────── */
+.ems-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.ems-btn-primary {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.25);
+}
+
+.ems-btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 4px 12px rgba(37,99,235,0.35);
+  transform: translateY(-1px);
+}
+
+.ems-btn-primary:active {
+  transform: translateY(0);
+}
+
+.ems-btn-edit {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.82rem;
+  padding: 6px 14px;
+}
+
+.ems-btn-edit:hover {
+  background: #dbeafe;
+}
+
+.ems-btn-delete {
+  background: var(--danger-light);
+  color: var(--danger);
+  font-size: 0.82rem;
+  padding: 6px 14px;
+}
+
+.ems-btn-delete:hover {
+  background: #fee2e2;
+}
+
+.ems-btn-success {
+  background: var(--success);
+  color: white;
+  box-shadow: 0 2px 8px rgba(5,150,105,0.25);
+  width: 100%;
+  justify-content: center;
+  padding: 11px;
+  font-size: 0.95rem;
+}
+
+.ems-btn-success:hover {
+  background: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(5,150,105,0.35);
+}
+
+/* ─── Stats Bar ─────────────────────────────────────── */
+.ems-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ems-stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  flex: 1;
+  box-shadow: var(--shadow-sm);
+}
+
+.ems-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.ems-stat-value {
+  font-family: 'Fraunces', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ─── Table Card ────────────────────────────────────── */
+.ems-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.ems-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ems-table thead {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+}
+
+.ems-table th {
+  padding: 12px 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ems-table td {
+  padding: 14px 20px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.ems-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ems-table tbody tr {
+  transition: background 0.15s;
+}
+
+.ems-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.ems-id-badge {
+  display: inline-block;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.ems-name {
+  font-weight: 500;
+}
+
+.ems-email {
+  color: var(--text-secondary);
+  font-size: 0.87rem;
+}
+
+.ems-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ─── Empty State ───────────────────────────────────── */
+.ems-empty {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  color: var(--text-muted);
+}
+
+.ems-empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  opacity: 0.4;
+}
+
+.ems-empty p {
+  font-size: 0.95rem;
+}
+
+/* ─── Form Card ─────────────────────────────────────── */
+.ems-form-wrap {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.ems-form-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.ems-form-header {
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 1px solid var(--border-soft);
+  background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+}
+
+.ems-form-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+
+.ems-form-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.ems-form-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+.ems-form-body {
+  padding: 1.75rem 2rem 2rem;
+}
+
+.ems-field {
+  margin-bottom: 1.25rem;
+}
+
+.ems-label {
+  display: block;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.ems-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.ems-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.10);
+}
+
+.ems-input::placeholder {
+  color: var(--text-muted);
+}
+
+.ems-input.is-invalid {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(220,38,38,0.08);
+}
+
+.ems-error {
+  font-size: 0.8rem;
+  color: var(--danger);
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ─── Footer ────────────────────────────────────────── */
+.ems-footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 1.1rem 2rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.ems-footer p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.ems-footer span {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ─── Fade-in animation ─────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ems-main, .ems-form-card {
+  animation: fadeUp 0.35s ease both;
+}
