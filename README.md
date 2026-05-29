@@ -36,35 +36,31 @@ A full-stack **Employee Management System** built with **React + Vite** on the f
 - Java backend running locally
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/Dharshinisekar07/Employee-Management-System.git
 cd Employee-Management-System/ems-frontend
 
 ### 2. Install Dependencies
-```bash
 npm install
 
 ### 3. Start the Development Server
-```bash
 npm run dev
 
 ### 4. Open in Browser
-
 http://localhost:5173
 
 ##  Available Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint checks |
-
+| npm run dev | Start development server |
+| npm run build | Build for production |
+| npm run preview | Preview production build |
+| npm run lint | Run ESLint checks |
 
 ##  Backend Setup
 
-Make sure your Java backend is running. Update the base URL in `src/Services/EmployeeService.js`:js
+Make sure your Java backend is running. Update the base URL in src/Services/EmployeeService.js :js
 const BASE_URL = "http://localhost:8080/api/employees";
 
 ## 👩‍💻 Author
@@ -72,7 +68,7 @@ const BASE_URL = "http://localhost:8080/api/employees";
 ### Dharshini S
 **Full Stack Developer**
 
-💡 Skills: `HTML` `CSS` `JavaScript` `React.js` `Java`  
+💡 Skills: HTML,CSS,JavaScript,React.js, Java 
 🎯 Focus: Frontend Development | Backend Development
 
 
@@ -84,4 +80,4 @@ const BASE_URL = "http://localhost:8080/api/employees";
 
 This project is licensed under the [MIT License](LICENSE).
 
-> ⭐ If you found this project helpful, please give it a star!
+If you found this project helpful, please give it a star!
