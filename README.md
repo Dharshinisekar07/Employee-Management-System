@@ -60,10 +60,10 @@ http://localhost:5173
 
 ##  Backend Setup
 
-Make sure your Java backend is running. Update the base URL in src/Services/EmployeeService.js :js
+The base URL in src/Services/EmployeeService.js :js
 const BASE_URL = "http://localhost:8080/api/employees";
 
-## 👩‍💻 Author
+##  Author
 
 ### Dharshini S
 **Full Stack Developer**
