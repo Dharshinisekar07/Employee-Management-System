@@ -154,7 +154,7 @@ SELECT * FROM ems.employees;
 
 
 
-###  Frontend Setup (React)
+##  Frontend Setup (React)
 
 
  1. Navigate to frontend folder
