@@ -131,39 +131,39 @@ SELECT * FROM ems.employees;
 - MySQL 8.0+
 
 
-###  Backend Setup (Spring Boot)
-
-bash
-# 1. Clone the repository
-git clone https://github.com/your-username/ems-pro.git
-
-# 2. Navigate to backend folder
-cd ems-pro/backend
-
-# 3. Configure database in src/main/resources/application.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/ems
-spring.datasource.username=root
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-
-# 4. Run the Spring Boot application
-mvn spring-boot:run
+##  Backend Setup (Spring Boot)
 
 
-Backend runs at: http://localhost:8080
+ 1. Clone the repository
+  git clone https://github.com/your-username/ems-pro.git
+
+ 2. Navigate to backend folder
+  cd ems-pro/backend
+
+ 3. Configure database in src/main/resources/application.properties
+ spring.datasource.url=jdbc:mysql://localhost:3306/ems
+ spring.datasource.username=root
+ spring.datasource.password=your_password
+ spring.jpa.hibernate.ddl-auto=update
+
+ 4. Run the Spring Boot application
+ mvn spring-boot:run
+
+
+ Backend runs at: http://localhost:8080
 
 
 
 ###  Frontend Setup (React)
 
-bash
-# 1. Navigate to frontend folder
+
+ 1. Navigate to frontend folder
 cd ems-pro/frontend
 
-# 2. Install dependencies
+ 2. Install dependencies
 npm install
 
-# 3. Start the React app
+ 3. Start the React app
 npm start
 
 
